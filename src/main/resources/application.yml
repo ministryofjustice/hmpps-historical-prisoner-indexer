@@ -18,6 +18,10 @@ spring:
       test:
         - "stdout"
 
+  flyway:
+    enabled: false
+
+
 server:
   port: 8080
   servlet:

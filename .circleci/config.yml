@@ -14,8 +14,10 @@ parameters:
 jobs:
   validate:
     executor:
-      name: hmpps/java
-      tag: "17.0"
+      name: hmpps/java_mssql
+      jdk_tag: "18.0"
+      mssql_tag: "2017-latest"
+      sa_password: "YourStrong!Passw0rd"
     steps:
       - checkout
       - restore_cache:
