@@ -17,7 +17,7 @@ spring:
     group:
       test:
         - "stdout"
-        -
+
   flyway:
     enabled: false
 
