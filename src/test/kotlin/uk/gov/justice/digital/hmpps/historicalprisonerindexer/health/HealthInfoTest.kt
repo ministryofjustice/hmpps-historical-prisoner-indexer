@@ -1,4 +1,4 @@
-package uk.gov.justice.digital.hmpps.hmppshistoricalprisonerindexer.health
+package uk.gov.justice.digital.hmpps.historicalprisonerindexer.health
 
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test

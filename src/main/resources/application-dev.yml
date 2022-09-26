@@ -1,0 +1,31 @@
+server:
+  shutdown: immediate
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          public-key-location: classpath:local-public-key.pub
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
+
+  datasource:
+    url: jdbc:sqlserver://localhost\iis-db:1433;encrypt=false;
+    username: sa
+    password: YourStrong!Passw0rd
+
+
+  flyway:
+    locations: classpath:db/migration/iis,db/migration/dev/data/
+    enabled: true
+    mixed: true
+
+oauth:
+  endpoint.url: http://localhost:9090/auth
+  client:
+    id: indexer-client
+    secret: clientsecret
+

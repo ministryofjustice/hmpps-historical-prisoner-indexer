@@ -17,6 +17,10 @@ spring:
     group:
       test:
         - "stdout"
+        -
+  flyway:
+    enabled: false
+
 
 server:
   port: 8080

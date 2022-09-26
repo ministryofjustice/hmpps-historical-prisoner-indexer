@@ -1,4 +1,4 @@
-package uk.gov.justice.digital.hmpps.hmppshistoricalprisonerindexer.config
+package uk.gov.justice.digital.hmpps.historicalprisonerindexer.config
 
 import org.slf4j.LoggerFactory
 import org.springframework.http.HttpStatus
