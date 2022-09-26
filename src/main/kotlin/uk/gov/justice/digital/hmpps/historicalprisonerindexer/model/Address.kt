@@ -9,7 +9,7 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "ADDRESSES")
-data class Addresses(
+data class Address(
   @Id
   @GeneratedValue(generator = "PK_ADDRESS")
   @Column(name = "PK_ADDRESS", nullable = false)
