@@ -8,7 +8,7 @@ import javax.persistence.Id
 import javax.persistence.Table
 
 @Entity
-@Table(name = "ADDRESSES")
+@Table(name = "ADDRESSES", schema = "HPA")
 data class Address(
   @Id
   @GeneratedValue(generator = "PK_ADDRESS")
