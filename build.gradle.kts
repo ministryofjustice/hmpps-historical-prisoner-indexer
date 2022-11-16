@@ -1,7 +1,7 @@
 plugins {
-  id("uk.gov.justice.hmpps.gradle-spring-boot") version "4.5.7"
-  kotlin("plugin.spring") version "1.7.20"
-  kotlin("plugin.jpa") version "1.7.20"
+  id("uk.gov.justice.hmpps.gradle-spring-boot") version "4.6.0-beta"
+  kotlin("plugin.spring") version "1.7.21"
+  kotlin("plugin.jpa") version "1.7.21"
 }
 
 configurations {
@@ -20,7 +20,7 @@ dependencies {
   runtimeOnly("org.flywaydb:flyway-core")
   runtimeOnly("org.flywaydb:flyway-sqlserver")
   runtimeOnly("org.jetbrains.kotlin:kotlin-reflect:1.7.10")
-  runtimeOnly("com.microsoft.sqlserver:mssql-jdbc:11.2.1.jre18")
+  runtimeOnly("com.microsoft.sqlserver:mssql-jdbc:12.1.0.jre11-preview")
   testImplementation("org.springframework.boot:spring-boot-starter-test")
   testImplementation("org.springframework.security:spring-security-test")
   implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
