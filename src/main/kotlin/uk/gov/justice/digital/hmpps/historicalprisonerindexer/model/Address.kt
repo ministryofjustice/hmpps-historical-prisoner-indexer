@@ -22,7 +22,7 @@ data class Address(
   val county: String? = null,
   val postcode: String? = null,
   val type: String? = null,
-  val person: String? = null
+  val person: String? = null,
 ) : Serializable {
   override fun toString(): String {
     return "Addresses(pkAddress=$pkAddress, originId='$originId', prisonNumber='$prisonNumber', street='$street', town='$town', county='$county', postcode='$postcode', type='$type', person='$person')"
